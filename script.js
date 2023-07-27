@@ -9,7 +9,7 @@ links.forEach((link) => {
     nav.classList.remove("active");
   })
 });
-
+/*label-message Dites-nous ce que vous souhaitez acheter: */
 
 const navbar = document.getElementById('nav');
 let prevScrollPos = window.pageYOffset;
