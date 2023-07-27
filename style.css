@@ -97,6 +97,13 @@ p {
   filter: brightness(50%);
 }
 
+#li1 ,
+#li2 ,
+#li3  {
+  height: calc(1vh + 1vw);
+
+}
+
 #li1 a:hover::after,
 #li2 a:hover::after,
 #li3 a:hover::after {
@@ -104,7 +111,7 @@ p {
   position: absolute;
   left: 0;
   width: 100%;
-  background: #628a2b;
+  background: #ff2323ef;
   height: 4px;
   bottom: -10px;
   border-radius: 50%;
@@ -152,7 +159,7 @@ h1 {
   padding: 20px;
   text-align: center;
   font-size: calc(1rem + 3vw);
-  color: #4f692a;
+  color: #fd1616f5;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   /*animation: shine 13s infinite alternate;*/
 }
@@ -161,7 +168,7 @@ h1 {
   0% {
   }
   100% {
-    color: #7d6813;
+    color: #712b1d;
   }
 }
 
@@ -208,7 +215,7 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #5d812b;
+  background-color: #f53131f7;
   color: #fff;
   border: none;
   padding: 12px 20px;
@@ -217,7 +224,7 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 button[type="submit"]:hover {
-  background-color: #79ad2f;
+  background-color: #ff2121f7;
   transform: scale(1.1);
 }
 li {
@@ -226,7 +233,7 @@ li {
 
 li {
   display: inline-block;
-  background: #5d812b;
+  background: #e51313ef;
   padding: 0 0 2px 0;
   border-radius: 20px;
   /* Ajustez le rayon de bordure pour arrondir les coins */
@@ -290,7 +297,7 @@ a:hover {
 nav {
   position: fixed;
   z-index: 999;
-  background: #4f692a;
+  background: #e8b3b3fa;
   top: 0;
   left: 0;
   width: 100%;
@@ -298,7 +305,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  font-size: calc(0.5rem + 1.5vw);
+  font-size: calc(0.5rem + 0.5vw + 0.5vh);
   box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 1);
     transition: 0.4s ease-in;
 }
@@ -316,7 +323,7 @@ li a {
 }
 
 nav li:hover {
-  background: #628a2b;
+  background: #ff2323ef;
 }
 
 #icons {
@@ -348,7 +355,7 @@ nav li:hover {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  background: linear-gradient(to right, #d5b01c, #628a2b);
+  background: linear-gradient(to right, #d5b01c, #e84922);
 
   z-index: 99999999;
 }
@@ -402,7 +409,7 @@ nav li:hover {
 .container-vert {
   width: 100%;
   min-height: 40vh; /* Utilisation de min-height pour s'assurer d'une hauteur minimale */
-  background-color: #4f692a;
+  background-color: #bd6363;
   transition: background-color 0.5s ease;
   display: flex; /* Afficher les éléments en ligne (horizontalement) */
   justify-content: center; /* Centrer horizontalement les éléments */
@@ -410,9 +417,9 @@ nav li:hover {
 }
 
 footer {
-  background-color: #4f692a;
+  background-color: #ded0d0fa;
   padding: 20px 0;
-  color: #fff;
+  color: #080808fa;
   text-align: center;
 }
 
@@ -502,7 +509,7 @@ footer .newsletter-form {
   max-width: 750px;
 }
 
-#msgSM {
+#msgSM { /*social mdia*/
   all: unset;
   line-height: calc(1.5rem + 1vw);
   font-size: calc(1rem + 0.5vw);
@@ -522,13 +529,13 @@ footer .newsletter-form {
   margin-top:calc(2vh + 2vw); ;
   margin-bottom:calc(4vh + 4vw + 20px);
 }
-@media (min-width: 998px) {
+@media (min-width: 1180px) {
   #imgwtsp {
     margin-top: calc(0.3vh + 0.3vw);
   }
 }
 
-@media (max-width: 998px) {
+@media (max-width: 1180px) {
   #icons {
     opacity: 1;
     visibility: visible;
@@ -556,7 +563,7 @@ footer .newsletter-form {
     left: -5vw;  
     top: calc(-20vw - 20vh);
     flex-direction: column;
-    background: #4f692a;
+    background: #e8b3b3fa;
     width: 100%;
     text-align: center;
     transition: 0.25s;
@@ -564,11 +571,9 @@ footer .newsletter-form {
     transform: scaleY(0.05);
     transition: 0.4s ease-out;
   }
-  nav li {
-    padding: 10px 10px;
-  }
+
   nav li:hover {
-    background: #628a2b;
+    background: #f31a1aef  ;
   }
   nav.active ul {
     position : absolute;
@@ -581,20 +586,20 @@ footer .newsletter-form {
   nav.active li {
     position: relative;
     width: calc(20vw + 20vh) ;
-    height: calc(3vw + 1vh) ;
+    height: calc(2vw + 2vh) ;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: calc(2vw + 1vh) ;
-    margin-top: calc(2vw + 1vh) ;
+    margin-bottom: calc(0.7vw + 0.7vh) ;
+    margin-top: calc(0.7vw + 0.7vh) ;
   }
   nav.active li a span {
-    transform: translate(50%, 0%);
+    transform: translate(90%, 0%);
   }
 
   nav.active li a {
     position: absolute;
     width: calc(20vw + 20vh) ;
-    height: calc(3vw + 1vh) ;
+    height: calc(1.2vw + 1.2vh) ;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
