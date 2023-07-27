@@ -104,14 +104,15 @@
     <div class="container-noir">
       <h1 id="h1formulaire">Passer une commande</h1>
       <form action="https://formspree" method="POST">
+
+          <label for="message"><span id="label-message">Dites-nous ce que vous souhaitez acheter:</span></label>
+          <textarea id="message" name="message"></textarea>
+
           <label for="phone"><span id="label-phone">Téléphone:</span></label>
           <input type="phone" id="phone" name="phone"/>
       
           <label for="email"><span id="label-email">Email:</span></label>
           <input type="email" id="email" name="email"/>
-      
-          <label for="message"><span id="label-message">Message:</span></label>
-          <textarea id="message" name="message"></textarea>
       
           <button type="submit"><span id="label-submit">Envoyer</span></button>
       </form>
